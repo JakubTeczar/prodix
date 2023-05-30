@@ -1,0 +1,167 @@
+.exercise-add-panel, .exercise-edit-panel {
+  background: #1C1E2B;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: none;
+}
+@media (max-width: 58em) {
+  .exercise-add-panel, .exercise-edit-panel {
+    padding: 0 2em;
+  }
+}
+.exercise-add-panel__container, .exercise-edit-panel__container {
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+.exercise-add-panel__details, .exercise-edit-panel__details {
+  display: flex;
+  gap: 0.4em;
+}
+.exercise-add-panel__title, .exercise-edit-panel__title {
+  width: 100%;
+  height: min-content;
+  border: 2px solid white;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 4rem;
+}
+.exercise-add-panel__title input, .exercise-add-panel__title textarea, .exercise-edit-panel__title input, .exercise-edit-panel__title textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.7em 1.1em;
+  color: white;
+  font-size: 2rem;
+  resize: none;
+}
+.exercise-add-panel__title .placeholder, .exercise-edit-panel__title .placeholder {
+  position: absolute;
+  top: -0.5em;
+  left: 1.5em;
+  background: #1C1E2B;
+  padding: 0 0.7em;
+  text-transform: uppercase;
+}
+.exercise-add-panel__repetitions, .exercise-edit-panel__repetitions {
+  width: 50%;
+  height: min-content;
+  border: 2px solid white;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 4rem;
+}
+.exercise-add-panel__repetitions input, .exercise-add-panel__repetitions textarea, .exercise-edit-panel__repetitions input, .exercise-edit-panel__repetitions textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.7em 1.1em;
+  color: white;
+  font-size: 2rem;
+  resize: none;
+}
+.exercise-add-panel__repetitions .placeholder, .exercise-edit-panel__repetitions .placeholder {
+  position: absolute;
+  top: -0.5em;
+  left: 1.5em;
+  background: #1C1E2B;
+  padding: 0 0.7em;
+  text-transform: uppercase;
+}
+.exercise-add-panel__weight, .exercise-edit-panel__weight {
+  width: 50%;
+  height: min-content;
+  border: 2px solid white;
+  position: relative;
+  overflow: visible;
+}
+.exercise-add-panel__weight input, .exercise-add-panel__weight textarea, .exercise-edit-panel__weight input, .exercise-edit-panel__weight textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.7em 1.1em;
+  color: white;
+  font-size: 2rem;
+  resize: none;
+}
+.exercise-add-panel__weight .placeholder, .exercise-edit-panel__weight .placeholder {
+  position: absolute;
+  top: -0.5em;
+  left: 1.5em;
+  background: #1C1E2B;
+  padding: 0 0.7em;
+  text-transform: uppercase;
+}
+.exercise-add-panel__description, .exercise-edit-panel__description {
+  width: 100%;
+  height: min-content;
+  border: 2px solid white;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 4rem;
+}
+.exercise-add-panel__description input, .exercise-add-panel__description textarea, .exercise-edit-panel__description input, .exercise-edit-panel__description textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.7em 1.1em;
+  color: white;
+  font-size: 2rem;
+  resize: none;
+}
+.exercise-add-panel__description .placeholder, .exercise-edit-panel__description .placeholder {
+  position: absolute;
+  top: -0.5em;
+  left: 1.5em;
+  background: #1C1E2B;
+  padding: 0 0.7em;
+  text-transform: uppercase;
+}
+.exercise-add-panel__add-btn, .exercise-add-panel__save-btn, .exercise-edit-panel__add-btn, .exercise-edit-panel__save-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid #5CAF75;
+  line-height: 230%;
+  font-size: 2.6rem;
+  height: min-content;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  font-size: 2rem;
+  margin-top: 1em;
+}
+.exercise-add-panel__add-btn:hover, .exercise-add-panel__save-btn:hover, .exercise-edit-panel__add-btn:hover, .exercise-edit-panel__save-btn:hover {
+  background: #5CAF75;
+}
+.exercise-add-panel__delete-btn, .exercise-edit-panel__delete-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid #BF524A;
+  line-height: 230%;
+  font-size: 2.6rem;
+  height: min-content;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  margin-top: 3em;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+.exercise-add-panel__delete-btn:hover, .exercise-edit-panel__delete-btn:hover {
+  background: #BF524A;
+}
+.exercise-add-panel__save-btn, .exercise-edit-panel__save-btn {
+  margin: 0;
+}

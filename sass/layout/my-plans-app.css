@@ -1,0 +1,123 @@
+.my-plans {
+  width: 100%;
+  height: 60%;
+  margin-top: 6rem;
+}
+.my-plans__top {
+  margin-bottom: 6rem;
+  overflow: hidden;
+}
+.my-plans__title {
+  text-align: center;
+  width: 50rem;
+  padding: 1.6rem;
+  margin: 3rem auto;
+  margin-top: 6rem;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  position: relative;
+}
+.my-plans__title::after, .my-plans__title::before {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  transition: left 0.4s, top 0.4s;
+}
+.my-plans__title::after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+.my-plans__title::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.my-plans__title:hover::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+}
+.my-plans__title:hover::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: -1rem;
+}
+@media (max-width: 25em) {
+  .my-plans__title {
+    font-size: 2.6rem;
+    width: 40rem;
+  }
+}
+@media (max-width: 22em) {
+  .my-plans__title {
+    font-size: 2.2rem;
+    width: 34rem;
+  }
+}
+.my-plans__bottom {
+  padding: 0 1em;
+}
+.my-plans__btn-container {
+  height: 8rem;
+  display: flex;
+  width: 45rem;
+  background: #5C69AF;
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 89% 100%, 0 100%);
+  padding-left: 2rem;
+}
+@media (max-width: 25em) {
+  .my-plans__btn-container {
+    font-size: 2.4rem;
+    width: 35rem;
+  }
+}
+.my-plans .btn-container__input {
+  width: 3.6rem;
+  height: 3.6rem;
+  background: #383945;
+  margin-left: 1.2rem;
+  position: relative;
+}
+.my-plans .btn-container__input:hover {
+  cursor: pointer;
+}
+.my-plans .btn-container__input:checked::after {
+  background: white;
+}
+.my-plans .btn-container__input::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 15px #000000;
+}
+.my-plans__card-container {
+  display: flex;
+  gap: 3em;
+  overflow: auto;
+}
+.my-plans__card-container::-webkit-scrollbar {
+  height: 1rem;
+}
+.my-plans__card-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.125);
+}
+.my-plans__card-container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.my-plans__crate-plan-btn {
+  width: 35rem;
+  margin: 2em auto;
+}

@@ -1,0 +1,254 @@
+.creating-panel {
+  background: #1C1E2B;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: grid;
+  display: none;
+  grid-template-columns: 34% 6% 60%;
+  grid-template-rows: repeat(8, 1fr);
+  padding: 3.5rem 8rem;
+}
+.creating-panel * {
+  overflow: hidden;
+}
+.creating-panel__select-container {
+  grid-row: 3/8;
+  grid-column: 1/2;
+}
+.creating-panel__add-btn {
+  grid-row: 8/9;
+  grid-column: 1/2;
+  width: 100%;
+  margin-top: auto;
+  background: transparent;
+  color: white;
+  border: 2px solid #5C69AF;
+  line-height: 230%;
+  font-size: 2.6rem;
+  height: min-content;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+.creating-panel__add-btn:hover {
+  background: #5C69AF;
+}
+@media (max-width: 75em) {
+  .creating-panel__add-btn {
+    font-size: 1.7rem;
+  }
+}
+.creating-panel__title {
+  grid-column: 1/2;
+  width: 30rem;
+  height: min-content;
+  border: 2px solid white;
+  position: relative;
+  overflow: visible;
+}
+.creating-panel__title input, .creating-panel__title textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.7em 1.1em;
+  color: white;
+  font-size: 2rem;
+  resize: none;
+}
+.creating-panel__title .placeholder {
+  position: absolute;
+  top: -0.5em;
+  left: 1.5em;
+  background: #1C1E2B;
+  padding: 0 0.7em;
+  text-transform: uppercase;
+}
+.creating-panel__description {
+  grid-column: 3/4;
+  width: 100%;
+  height: 9.3rem;
+  border: 2px solid white;
+  position: relative;
+  overflow: visible;
+}
+.creating-panel__description input, .creating-panel__description textarea {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.7em 1.1em;
+  color: white;
+  font-size: 2rem;
+  resize: none;
+}
+.creating-panel__description .placeholder {
+  position: absolute;
+  top: -0.5em;
+  left: 1.5em;
+  background: #1C1E2B;
+  padding: 0 0.7em;
+  text-transform: uppercase;
+}
+.creating-panel__switch-type {
+  grid-row: 2/3;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  border: 2px solid white;
+}
+@media (max-width: 75em) {
+  .creating-panel__switch-type {
+    height: 5rem;
+  }
+}
+.creating-panel__switch-type button {
+  background: transparent;
+  flex: 1;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: background 0.2s;
+}
+.creating-panel__switch-type button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.creating-panel__switch-type .selected {
+  background: #5C69AF;
+}
+.creating-panel__info {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  display: flex;
+  align-items: center;
+  padding-top: 2em;
+}
+.creating-panel__info--text {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 210%;
+  padding-right: 2em;
+  padding-left: 1em;
+  margin-right: 2em;
+  background: #5C69AF;
+  clip-path: polygon(0 0, 89% 0, 100% 100%, 0% 100%);
+}
+.creating-panel__info--delete-btn {
+  background: transparent;
+  color: white;
+  border: 2px solid #BF524A;
+  line-height: 230%;
+  font-size: 2.6rem;
+  height: min-content;
+  width: 16rem;
+  text-transform: uppercase;
+  transition: background 0.3s;
+  font-size: 1.8rem;
+  display: none;
+}
+.creating-panel__info--delete-btn:hover {
+  background: #BF524A;
+}
+@media (max-width: 75em) {
+  .creating-panel__info--delete-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid #BF524A;
+    line-height: 230%;
+    font-size: 2.6rem;
+    height: 100%;
+    width: 10rem;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    font-size: 1.3rem;
+  }
+  .creating-panel__info--delete-btn:hover {
+    background: #BF524A;
+  }
+}
+.creating-panel__info .active-delete-btn {
+  display: block;
+}
+.creating-panel__info .active-delete-btn:hover {
+  cursor: grab;
+}
+.creating-panel__plan {
+  grid-row: 3/8;
+  grid-column: 3/4;
+}
+.creating-panel__save-plan-btn {
+  grid-row: 8/9;
+  grid-column: 3/4;
+  background: transparent;
+  color: white;
+  border: 2px solid #5CAF75;
+  line-height: 230%;
+  font-size: 2.6rem;
+  height: min-content;
+  width: 30rem;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+.creating-panel__save-plan-btn:hover {
+  background: #5CAF75;
+}
+@media (max-width: 75em) {
+  .creating-panel__save-plan-btn {
+    font-size: 1.7rem;
+  }
+}
+.creating-panel__public-plan {
+  margin-left: auto;
+  height: 6.6rem;
+  width: 28rem;
+  font-weight: bold;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 75em) {
+  .creating-panel__public-plan {
+    font-size: 1.7rem;
+    justify-content: flex-end;
+    padding-right: 2em;
+  }
+}
+.creating-panel__public-plan--checkbox {
+  width: 2.6rem;
+  height: 2.6rem;
+  background: #383945;
+  position: relative;
+  border: 1px solid white;
+  margin-left: 2rem;
+}
+.creating-panel__public-plan--checkbox:hover {
+  cursor: pointer;
+}
+.creating-panel__public-plan--checkbox:checked::after {
+  background: white;
+}
+.creating-panel__public-plan--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 15px #000000;
+}
+.creating-panel__action-container {
+  grid-row: 8/9;
+  grid-column: 3/4;
+  display: flex;
+  align-items: flex-end;
+}
